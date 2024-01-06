@@ -6,17 +6,12 @@
     box-sizing: border-box;
     scroll-behavior:smooth;
     }
-    /* .container{
-        width:100%;
-        height:100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(pray.png);
-        background-size: cover;
-        background-position:center;
-    } */
-    .navbar{  
+
+    nav{
         position: relative;
         width:100%;
-        padding:10px 0;
+        /* margin:auto; */
+        /* padding:10px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -24,54 +19,89 @@
         position:fixed;
         border:0px solid white; 
         z-index:999;
+        /* background-color: blue; */
+
+        
         
     }
-    .logo{
-        width:200px;
-        cursor: pointer;
-        padding-left:20px;
-        /* margin-left:20px; */
+    .nav-tools ul:last-child{
+        padding-right:35px;
     }
-    .navbar ul li{
-        list-style: none;
-        display: inline-block;
-        margin:0 20px;
-        position: relative;
+    nav .logo img{
+        width: 180px;
+        padding-left: 20px;
+        padding-top: 15px;
     }
-    .navbar ul li a{
+    .nav-tools ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:40px;
+        list-style:none;
+    
+    }
+    nav ul li a{
         text-decoration: none;
         color:black;
         text-transform: uppercase;
         font-weight: bold;
-        font-size:18px;
-    }
-    .navbar ul li::after{
-        content:" ";
-        height: 3px;
-        width: 0;
-        background-color:mediumblue;
-        position: absolute;
-        left:0;
-        bottom:-7px;
-        transition: 0.5s;
-    }
-    .navbar ul li:hover::after{
-        width:80%;
-        
+        font-size:22px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
     
-    .navbar i{
+    nav ul li a:hover{
+        cursor: pointer;
+        text-shadow: #080808 0px 0px 10px;
+    }
+    
+    label i{
         display: none!important;
         font-size:25px;
         color: #fff;
     }
-    .navbar input{
+    .nav-tools input{
         display: none;
     }
-    .navbar input:checked ~ li{
+    input:checked ~ li{
         left:0;
     }
-
+    
+    @media screen and (max-width:800px){
+        .nav-tools ul {
+            position: fixed;
+            flex-direction: column;
+            background:linear-gradient(120deg,black,#819595,#000000);
+            top: 67px;
+            left: 0;
+            width: 100%;
+            justify-content: start;
+            height: 100vh;
+            align-items: center;
+            padding-top: 80px;
+            left: -100%;
+            transition: all 0.7s;
+            /* z-index:1000; */
+        }
+        nav i{
+            padding-top: 10px;
+            font-size: 30px;
+            display: block!important;
+            padding-right:20px;
+        }
+        #navbar:checked~ul{
+            left: 0;
+        }
+        nav ul li a{
+            font-size:18px;
+        }
+        .nav-tools ul:last-child{
+            padding:0px;
+        }
+        
+    }
+    
+    
+    
     
 
     .full{
