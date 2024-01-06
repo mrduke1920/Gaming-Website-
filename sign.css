@@ -26,6 +26,7 @@
     }
     .nav-tools ul:last-child{
         padding-right:35px;
+        
     }
     nav .logo img{
         width: 180px;
@@ -75,7 +76,7 @@
             left: 0;
             width: 100%;
             justify-content: start;
-            height: 100vh;
+            height: 88vh;
             align-items: center;
             padding-top: 80px;
             left: -100%;
@@ -96,6 +97,7 @@
         }
         .nav-tools ul:last-child{
             padding:0px;
+            padding-top: 60px;
         }
         
     }
