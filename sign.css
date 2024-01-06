@@ -78,7 +78,7 @@
             justify-content: start;
             height: 88vh;
             align-items: center;
-            padding-top: 80px;
+            
             left: -100%;
             transition: all 0.7s;
             z-index:1000;
@@ -93,7 +93,7 @@
             left: 0;
         }
         nav ul li a{
-            font-size:18px;
+            font-size:23px;
         }
         .nav-tools ul:last-child{
             padding:0px;

@@ -116,7 +116,6 @@ input:checked ~ li{
         justify-content: start;
         height: 88vh;
         align-items: center;
-        padding-top: 80px;
         left: -100%;
         transition: all 0.7s;
         z-index:1000;
@@ -1019,7 +1018,7 @@ width:100%;
     height:100vh;
 }
 .map{
-        height:40vh;
+        height:230px;
 }
 .image img {
     width: 300px;
@@ -1040,7 +1039,7 @@ width:100%;
     height: 85vh;
 }
 .maps{
-    height:40vh;
+    height:230px;
 }
 .images img {
     width: 300px;
@@ -1060,7 +1059,7 @@ width:100%;
 
 }
 .mapss{
-    height:40vh;
+    height:230px;
 }
 .imagess img {
     width: 300px;
@@ -1083,12 +1082,12 @@ width:100%;
     
 }
 .mapsss{
-    height:40vh;
+    height:230px;
 }
 .imagesss img {
     width: 300px;
     object-fit: cover;
-    height: 30vh;
+    height: 230vh;
 }
 
 }
