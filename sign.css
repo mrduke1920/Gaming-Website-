@@ -81,7 +81,7 @@
             padding-top: 80px;
             left: -100%;
             transition: all 0.7s;
-            /* z-index:1000; */
+            z-index:1000;
         }
         nav i{
             padding-top: 10px;
